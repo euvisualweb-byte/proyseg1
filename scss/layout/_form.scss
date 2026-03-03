@@ -1,0 +1,88 @@
+
+ /*mi proyecto*/
+
+.container8 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding:20px 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+form {
+    padding: 40px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    border-radius: 20px;
+    text-align: center;
+    width: 440px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-family: "poppins";
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 15px 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: var(--variable-color3);
+    border: 2px solid #8fb6c0;
+    font-family: "poppins";
+    color: var(--variable-color4);
+    outline: none;
+}
+
+textarea {
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fcf9f9;
+    border: 2px solid #8fb6c0;
+    color: #052a42;
+    outline: none;
+}
+
+
+
+
+input::placeholder, textarea::placeholder {
+    color: #bbcad8;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color: #507a86;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: #edfff0;
+    border: 0;
+    border-radius: 0px;
+    background-color: var(--variable-color5);;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--variable-color7);;
+}

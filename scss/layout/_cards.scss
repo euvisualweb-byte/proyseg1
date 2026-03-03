@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* CARDS ANIMADAS PERFILES MUSICOS Y ESTABLECIMIENTOS */
+
+.container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    background: rgb(253, 253, 253);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 700px;
+    transition: all 400ms ease;
+    overflow: hidden;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translate(-3%);
+}
+
+.card figure    {
+    height: 400px;
+}
+
+.card img    {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card h3    {
+    text-transform: uppercase;
+    color: var(--variable-color);
+    letter-spacing: 5px;
+    font-weight: 300px;
+    text-align: center;
+    padding: 5%;
+}
+.card p {
+    text-align: justify;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.card button {
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: var(--variable-color);
+    width:200px;
+    height: 40px;
+    padding: 5;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 20px 10px;
+    margin: 2rem auto;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.content    {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.cardp  {
+    color: rgb(15, 14, 14);
+}
+
+/* CARDS ZONA DE ANUNCIOS PAGINA COMUNIDAD */
+
+.container4 {
+    background-color: rgb(244, 246, 247);
+    width: 100vh;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card4 {
+    border-radius: 20px;
+    background-color: rgb(40, 57, 71);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 410px;
+    transition: all 400ms ease;
+    overflow: hidden;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.card4:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translate(-3%);
+}
+
+.card4 figure    {
+    height: 200px;
+}
+
+.card4 img    {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card4 h4    {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: rgb(167, 163, 163) 0 0 rgba(0, 0, 0, 0.3);
+    color: rgb(66, 159, 196);
+    padding: 10px;
+}
+.card4 p {
+    text-align: justify;
+
+    padding: 5px;
+    font-size: 14px;
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.card4 .btn {
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: rgb(0, 0, 0);
+    width:200px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    margin: 2rem auto;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.content    {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.cardp  {
+    color: rgb(228, 235, 238);
+}
+
+.card-title .h4{
+    color: white;
+}

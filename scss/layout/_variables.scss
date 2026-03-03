@@ -1,0 +1,190 @@
+
+:root {
+--variable-color: #FF6600;
+--variable-color1: #FF9900;
+--variable-color2: #5E5E5E;
+--variable-color3: white;
+--variable-color4: black;
+--variable-color5: #C95000;
+--variable-color6: #132f3a;
+--variable-color7: #AB0C00;
+}
+
+$color: #FF6600;
+$color2: #FF9900;
+$colorw: black;
+
+body {
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+}
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    color: var(--variable-color1);
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+.container  {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding:20px 20px;
+    justify-content: center;
+}
+
+.container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+ .container3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.container4 {
+    background-color: rgb(119, 166, 187);
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.container5  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: 10px;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.container6 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding:20px 20px;
+    justify-content: center;
+}
+
+.section{
+    margin: 5rem 5rem;
+}
+
+.section h2{
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-logos-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-brand{
+    width: 120px;
+    padding: 1rem 1rem;
+    filter: grayscale(20%);
+}
+
+.titulo1 {
+    color: var(--variable-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+
+}
+
+h1 {
+    @extend .titulo1;
+    color: var(--variable-color);
+    font-size: 3rem;
+}
+
+h2 {
+    @extend .titulo1;
+    color: var(--variable-color, rgb(47, 105, 119));
+    margin: 40px 0;  
+}
+
+h5 {
+    @extend .titulo1;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+
+}
+
+main {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.container .py-4 {
+    justify-content: center;
+    
+}
+
+.boton-redireccion {
+    background-color: var(--variable-color);
+    color: #fcfcfd;
+    width: 400px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 15px;
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--variable-color3);
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.boton-redireccion:hover {
+    background-color: var(--variable-color3);
+    border: 2px solid var(--variable-color);
+    color: var(--variable-color4);
+}
+
+/* Estilo responsivo */
+.imagen-completa {
+  width: auto; /* 100% del ancho de la vista (viewport) */
+  height: 44.8vw; /* Mantiene la proporción de aspecto */
+  display: block; /* Elimina espacios en blanco inferiores */
+}
+
+/* Para eliminar márgenes por defecto del navegador */
+body {
+  margin: 0;
+  padding: 0;
+}
