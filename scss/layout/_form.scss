@@ -38,7 +38,7 @@ input {
     border-radius: 20px;
     margin-bottom: 20px;
     background-color: var(--variable-color3);
-    border: 2px solid #8fb6c0;
+    border: 1px solid #f89766;
     font-family: "poppins";
     color: var(--variable-color4);
     outline: none;
@@ -49,7 +49,7 @@ textarea {
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: #fcf9f9;
-    border: 2px solid #8fb6c0;
+    border: 1px solid #f5a35f;
     color: #052a42;
     outline: none;
 }
@@ -69,7 +69,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .form-txt a {
-    color: #507a86;
+    color: #636161;
     font-size: 14px;
     text-decoration: none;
 }
@@ -84,5 +84,5 @@ input::placeholder, textarea::placeholder {
 }
 
 .btn:hover {
-    background-color: var(--variable-color7);;
+    background-color: var(--variable-color8);;
 }
