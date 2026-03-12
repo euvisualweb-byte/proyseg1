@@ -47,11 +47,11 @@
 
 .card h3    {
     text-transform: uppercase;
-    color: var(--variable-color);
-    letter-spacing: 5px;
+    color: var(--variable-color4);
+    letter-spacing: 2px;
     font-weight: 300px;
     text-align: center;
-    padding: 5%;
+    padding: 3%;
 }
 .card p {
     text-align: justify;
@@ -67,7 +67,7 @@
     display: block;
     border: 0;
     outline: 0;
-    background-color: var(--variable-color);
+    background-color: var(--variable-color5);
     width:200px;
     height: 40px;
     padding: 5;

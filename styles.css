@@ -47,11 +47,11 @@
 
 .card h3 {
   text-transform: uppercase;
-  color: var(--variable-color);
-  letter-spacing: 5px;
+  color: var(--variable-color4);
+  letter-spacing: 2px;
   font-weight: 300px;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
 }
 
 .card p {
@@ -69,7 +69,7 @@
   display: block;
   border: 0;
   outline: 0;
-  background-color: var(--variable-color);
+  background-color: var(--variable-color5);
   width: 200px;
   height: 40px;
   padding: 5;
@@ -505,7 +505,7 @@ input::placeholder, textarea::placeholder {
 .navbar a {
   font-family: "Poppins";
   font-size: 1.1rem;
-  color: var(--variable-color2, rgb(17, 17, 17));
+  color: var(--variable-color5, rgb(17, 17, 17));
   text-decoration: none;
   font-weight: 400;
   margin-left: 1.5rem;
@@ -519,7 +519,7 @@ input::placeholder, textarea::placeholder {
   position: absolute;
   right: 5%;
   font-size: 2.2rem;
-  color: var(--variable-color2, rgb(15, 15, 15));
+  color: var(--variable-color5, rgb(15, 15, 15));
   cursor: pointer;
   display: none;
 }
@@ -581,13 +581,7 @@ input::placeholder, textarea::placeholder {
   --variable-color5: #C95000;
   --variable-color6: #132f3a;
   --variable-color7: #AB0C00;
-}
-
-body {
-  min-height: 100vh;
-  background: rgb(255, 255, 255);
-  background-size: cover;
-  background-position: center;
+  --variable-color8: #eeeceb;
 }
 
 a {
@@ -595,7 +589,7 @@ a {
 }
 
 .titulo {
-  color: var(--variable-color1);
+  color: var(--variable-color);
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
@@ -625,18 +619,22 @@ a {
   position: relative;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 
 .container4 {
-  background-color: rgb(119, 166, 187);
-  width: 100vw;
+  background-color: var(--variable-color8);
+  width: auto;
+  max-width: max-content;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: #161616;
   height: auto;
-  margin: 0;
+  margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .container5 {
@@ -656,6 +654,16 @@ a {
   flex-wrap: wrap;
   margin-bottom: 10px;
   padding: 20px 20px;
+  justify-content: center;
+}
+
+.container7 {
+  margin: 0 40px;
+  display: block;
+  padding: 20px 20px;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -691,12 +699,12 @@ a {
 }
 
 h1 {
-  color: var(--variable-color);
+  color: var(--variable-color5);
   font-size: 3rem;
 }
 
 h2 {
-  color: var(--variable-color, rgb(47, 105, 119));
+  color: var(--variable-color, rgb(197, 78, 30));
   margin: 40px 0;
 }
 
@@ -744,11 +752,6 @@ main {
 }
 
 /* Para eliminar márgenes por defecto del navegador */
-body {
-  margin: 0;
-  padding: 0;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -784,8 +787,8 @@ figure {
   width: 100%;
   text-align: center;
   margin-top: 10px;
-  color: var(--variable-color1);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: var(--variable-color5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .slide p {
@@ -910,7 +913,7 @@ figure {
   line-height: 80px;
   font-size: 30px;
   color: var(--variable-color1);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
 }
 
