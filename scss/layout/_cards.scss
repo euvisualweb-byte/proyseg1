@@ -20,7 +20,7 @@
     border-radius: 20px;
     background: rgb(253, 253, 253);
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
-    width: 400px;
+    width: 440px;
     height: 700px;
     transition: all 400ms ease;
     overflow: hidden;
@@ -40,7 +40,7 @@
 .card img    {
     height: 400px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -55,6 +55,7 @@
 }
 .card p {
     text-align: justify;
+    text-transform: none;
     color: black;
     padding: 5px;
     font-size: 14px;
