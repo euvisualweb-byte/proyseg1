@@ -268,9 +268,15 @@ body {
   margin: 0 auto;
 }
 
+.container11 {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--variable-color4);
+}
+
 .footer {
   background-color: var(--variable-color4);
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .footer-row {
@@ -324,6 +330,14 @@ body {
 
 .social-link a:hover {
   background-color: var(--variable-color1);
+}
+
+.container11 .grupo-2 {
+  background-color: #0c0c0c;
+  justify-content: center;
+  padding: 10px 10px;
+  text-align: center;
+  color: #ffffff;
 }
 
 @media (max-width: 991px) {
