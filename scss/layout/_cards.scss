@@ -54,11 +54,12 @@
     padding: 3%;
 }
 .card p {
-    text-align: justify;
+    text-align: left;
     text-transform: none;
+    font-family: poppins;
     color: black;
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
     width: 90%;
     height: auto;
@@ -169,6 +170,8 @@
 
 .cardp  {
     color: rgb(228, 235, 238);
+    font-family: poppins;
+    font-size: 16px;
 }
 
 .card-title .h4{
