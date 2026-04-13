@@ -196,5 +196,11 @@ main {
   display: block; /* Elimina espacios en blanco inferiores */
 }
 
+.imagen-completa2 {
+  width: 100%; /* 100% del ancho de la vista (viewport) */
+  height: auto; /* Mantiene la proporción de aspecto */
+  display: block; /* Elimina espacios en blanco inferiores */
+}
+
 /* Para eliminar márgenes por defecto del navegador */
 
