@@ -21,7 +21,7 @@
   background: rgb(253, 253, 253);
   box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
   width: 440px;
-  height: 700px;
+  height: 540px;
   transition: all 400ms ease;
   overflow: hidden;
   padding-bottom: 5px;
@@ -38,8 +38,9 @@
 }
 
 .card img {
-  height: 400px;
+  height: 280px;
   width: 100%;
+  padding: 10px;
   object-fit: contain;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -60,7 +61,7 @@
   font-family: poppins;
   color: black;
   padding: 5px;
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   width: 90%;
   height: auto;
