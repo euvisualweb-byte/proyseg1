@@ -48,17 +48,18 @@
 
 .card h3    {
     text-transform: uppercase;
-    color: var(--variable-color4);
-    letter-spacing: 2px;
-    font-weight: 300px;
+    font-family:roboto, sans-serif;
+    color: var(--variable-color6);
+    letter-spacing: 0px;
+    font-weight: 100px;
     text-align: center;
     padding: 3%;
 }
 .card p {
     text-align: left;
     text-transform: none;
-    font-family: poppins;
-    color: black;
+    font-family: roboto, sans-serif;
+    color: var(--variable-color4);
     padding: 5px;
     font-size: 14px;
     display: block;
@@ -76,19 +77,19 @@
     padding: 5;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    border-radius: 20px 10px;
+    border-radius: 20px 20px;
     margin: 2rem auto;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
 .content    {
-    padding: 15px 10px;
+    padding: 15px 15px;
     text-align: center;
 }
 
 .cardp  {
-    color: rgb(15, 14, 14);
+    color: var(--variable-color5);
 }
 
 /* CARDS ZONA DE ANUNCIOS PAGINA COMUNIDAD */
@@ -165,7 +166,7 @@
 }
 
 .content    {
-    padding: 15px 10px;
+    padding: 15px 15px;
     text-align: center;
 }
 
