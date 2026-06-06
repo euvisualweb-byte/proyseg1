@@ -13,7 +13,7 @@
 figure{
     display: flex;
     left: 0;
-    width: 400%; /* width dikali slide */
+    width: 500%; /* width dikali slide */
     animation: 20s slide infinite;
 }
 
@@ -21,7 +21,7 @@ figure{
     position: relative;
     display: flex;
     justify-content: center;
-    width: 25%; /* width dibagi slide */
+    width: 20%; /* width dibagi slide */
     float: none;
     flex-shrink: 0;
     text-align: center;
@@ -61,19 +61,24 @@ figure{
     
 }
 
+
+
 @keyframes slide {
-    /* Slide 1 - Posición inicial */
-    0%, 20% { transform: translateX(0); }
+    /* Slide 1 */
+    0%, 16% { transform: translateX(0); }
     
-    /* Transición y Slide 2 */
-    25%, 45% { transform: translateX(-25%); }
+    /* Slide 2 */
+    20%, 36% { transform: translateX(-20%); }
     
-    /* Transición y Slide 3 */
-    50%, 70% { transform: translateX(-50%); }
+    /* Slide 3 */
+    40%, 56% { transform: translateX(-40%); }
     
-    /* Transición y Slide 4 */
-    75%, 95% { transform: translateX(-75%); }
+    /* Slide 4 */
+    60%, 76% { transform: translateX(-60%); }
     
-    /* Vuelta fluida al Slide 1 */
+    /* Slide 5 */
+    80%, 96% { transform: translateX(-80%); }
+    
+    /* Vuelta fluida al inicio */
     100% { transform: translateX(0); }
 }
