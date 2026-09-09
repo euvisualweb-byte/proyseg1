@@ -58,7 +58,7 @@
 .card p {
     text-align: left;
     text-transform: none;
-    font-family: roboto, sans-serif;
+    font-family: montserrat,sans-serif;
     color: var(--variable-color4);
     padding: 5px;
     font-size: 14px;
@@ -71,9 +71,12 @@
     display: block;
     border: 0;
     outline: 0;
-    background-color: var(--variable-color5);
+    background-color: var(--variable-color);
     width:200px;
     height: 40px;
+    font-family: montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
     padding: 5;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
