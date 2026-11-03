@@ -43,6 +43,17 @@ body {
 }
 
 .shoes_box {
+    margin: 40px;
+    border-radius: 10%;
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoes_box2 {
     margin: 10px;
     border-radius: 10%;
     width: 400px;
@@ -55,6 +66,10 @@ body {
 
 .shoes_box img {
     height: 700px;
+}
+
+.shoes_box2 img {
+    height: 600px;
 }
 
 .shoes_items {
