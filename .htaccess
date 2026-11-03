@@ -1,0 +1,15 @@
+# SEO: una sola versión de cada URL (agregado 2026-10-29)
+RewriteEngine On
+
+# www -> sin www
+RewriteCond %{HTTP_HOST} ^www\.proyseg\.com\.ar$ [NC]
+RewriteRule ^(.*)$ https://proyseg.com.ar/$1 [R=301,L]
+
+# /index.html -> /
+RewriteCond %{HTTP_HOST} ^proyseg\.com\.ar$ [NC]
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?]
+RewriteRule ^index\.html$ https://proyseg.com.ar/ [R=301,L]
+
+# Página de tienda de prueba -> tienda real
+RewriteCond %{HTTP_HOST} ^proyseg\.com\.ar$ [NC]
+RewriteRule ^pages/tienda\.html$ https://tienda.proyseg.com.ar/ [R=301,L]
