@@ -1259,6 +1259,12 @@ body {
   padding-bottom: 30px;
 }
 
+/* Páginas de producto: el contenedor ocupa todo el ancho disponible,
+   sin importar el largo del texto (antes se achicaba con max-content). */
+.container:has(> .main_box) {
+  max-width: 100%;
+}
+
 .product_section {
   padding: 10px 10px 0 10px;
   display: grid;
