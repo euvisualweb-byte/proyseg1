@@ -999,88 +999,89 @@ figure {
   padding: 10px 0;
 }
 
+/* CARDS DE CATEGORÍA (catálogo, Funcional, Voran, inicio)
+   Toda la card es un link: sin giro, con zoom suave en la imagen. */
 .card1 {
   position: relative;
+  display: block;
   width: 400px;
+  max-width: 100%;
   height: 350px;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.card1 .face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  margin: 0 0 10px 0;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.card1 .front {
-  transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5 px 10px black;
-}
-
-.card1 .front img {
+.card1 img {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.card1 .front h4 {
+.card1 h4 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 80px;
-  line-height: 80px;
+  min-height: 80px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 30px;
+  line-height: 1.2;
   color: var(--variable-color1);
   background: rgba(0, 0, 0, 0.6);
   text-align: center;
+  transition: background 0.3s;
 }
 
-.card1 .back {
-  transform: perspective(600px) rotateY(180deg);
-  background: rgb(19, 39, 41);
-  padding: 15px;
-  color: var(--variable-color1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  box-shadow: 0 5px 10px black;
-}
-
-.card1 .back .link {
-  border-top: solid 1px #f3f3f3;
-  height: 50px;
-  line-height: 50px;
-}
-
-.card1 .back .link a {
-  color: #f3f3f3;
-}
-
-.card1 .back h4 {
-  font-size: 30px;
-  margin-top: 20px;
-  letter-spacing: 2px;
-}
-
-.card .back p {
+.card1 h4 span {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  font-size: 18px;
   letter-spacing: 1px;
-  font-size: 16px;
-  font-family: roboto, sans-serif;
+  color: #ffffff;
+  transition: max-height 0.3s, opacity 0.3s, margin-top 0.3s;
 }
 
-.card1:hover .front {
-  transform: perspective(600px) rotateY(180deg);
+.card1:hover,
+.card1:focus-visible {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
 }
 
-.card1:hover .back {
-  transform: perspective(600px) rotateY(360deg);
+.card1:hover img,
+.card1:focus-visible img {
+  transform: scale(1.08);
+}
+
+.card1:hover h4,
+.card1:focus-visible h4 {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.card1:hover h4 span,
+.card1:focus-visible h4 span {
+  max-height: 30px;
+  opacity: 1;
+  margin-top: 4px;
+}
+
+/* En pantallas táctiles (sin hover) el "Ver más" queda siempre visible */
+@media (hover: none) {
+  .card1 h4 span {
+    max-height: 30px;
+    opacity: 1;
+    margin-top: 4px;
+  }
 }
 
 :root {
