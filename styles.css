@@ -1421,6 +1421,58 @@ body {
   padding: 5px;
 }
 
+/* Productos EPP (protección auditiva, respiratoria, etc.):
+   fotos con fondo opaco -> se ajustan dentro de la caja sin desbordar.
+   Uso: <div class="shoes_box epp">. No afecta al calzado. */
+.shoes_box.epp {
+  padding: 0;
+}
+
+.shoes_box.epp img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+/* Lista de certificados en PDF (páginas EPP) */
+.certificados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 20px;
+  padding: 0;
+}
+
+.certificados li {
+  list-style: none;
+}
+
+.certificados a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--variable-color4);
+  border-radius: 8px;
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+  color: var(--variable-color4);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+}
+
+.certificados a i {
+  color: #d32f2f;
+}
+
+.certificados a:hover {
+  background: var(--variable-color4);
+  color: var(--variable-color1);
+}
+
 /* *********RESPONSIVE****** */
 @media screen and (max-width: 1400px) {
   .product_section {
